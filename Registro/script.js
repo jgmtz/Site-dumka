@@ -16,4 +16,48 @@ function toggleTheme() {
     });
     document.querySelectorAll(".h1_titulo").classList.toggle("White-mode")
 }
-        
+document.addEventListener('DOMContentLoaded', () => {
+    const roleSelect = document.getElementById('role');
+    const extraFieldContainer = document.getElementById('extraFieldContainer');
+
+    // Define os campos extras para cada perfil
+    const extraFields = {
+        usuario: {
+            inputType: 'date',
+            name: 'dataNascimento',
+            placeholder: 'Data de nascimento'
+        },
+        professor: {
+            inputType: 'tel',
+            name: 'telefone',
+            placeholder: 'Telefone'
+        },
+        curador: {
+            inputType: 'tel',
+            name: 'telefone',
+            placeholder: 'Telefone'
+        }
+    };
+
+    // Evento de mudança no select de perfil
+    roleSelect.addEventListener('change', () => {
+        const selectedRole = roleSelect.value;
+
+        // Limpa o campo extra anterior, se houver
+        extraFieldContainer.innerHTML = '';
+
+        // Adiciona o campo extra correspondente ao perfil selecionado
+        if (extraFields[selectedRole]) {
+            const fieldData = extraFields[selectedRole];
+            
+            const input = document.createElement('input');
+            input.setAttribute('type', fieldData.inputType);
+            input.setAttribute('id', fieldData.name);
+            input.setAttribute('name', fieldData.name);
+            input.setAttribute('placeholder', fieldData.placeholder);
+            input.required = true;
+
+            extraFieldContainer.appendChild(input);
+        }
+    });
+});
