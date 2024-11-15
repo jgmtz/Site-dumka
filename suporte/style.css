@@ -180,7 +180,7 @@ button a {
     max-width: 1300px; 
     margin: 0 auto;
     padding: 20px;
-    margin-top: 150px;
+    margin-top: 50px;
 }
 
 .h1_titulo {
@@ -214,25 +214,57 @@ button a {
 .txt{
     font-size: 20000px;
 }
-.button_main{
-    padding-top: 30px;
-}
-.button_historias {
+.button_registro2 {
     background-color: #A5D48C;
     margin-left: 10px;
     border-radius: 10px;
-    padding: 10px;
-    width: 190px;
+    width: 350px;
     height: 60px;
-    margin-top: 60px;
 }
 
-.button_quizzes {
-    background-color: #A5D48C;
-    margin-left: 10px;
-    border-radius: 10px;
-    padding: 10px;
-    width: 190px;
-    height: 60px;
-    margin-left: 120px;
+.form_login{
+    size: 300px;
+}
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="role"],
+input[type="tel"],
+input[type="date"] {
+    width: 100%;
+    display: fixed;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+.no_acc{
+    color: #787878;
+    text-decoration: underline;
+}
+select {
+    width: 100%;  
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+textarea{
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s, background-color 0.3s;
 }

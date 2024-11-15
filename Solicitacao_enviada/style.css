@@ -221,18 +221,14 @@ button a {
     background-color: #A5D48C;
     margin-left: 10px;
     border-radius: 10px;
-    padding: 10px;
-    width: 190px;
+    width: 350px;
     height: 60px;
-    margin-top: 60px;
 }
 
-.button_quizzes {
+.button_inicio {
     background-color: #A5D48C;
     margin-left: 10px;
     border-radius: 10px;
-    padding: 10px;
-    width: 190px;
+    width: 350px;
     height: 60px;
-    margin-left: 120px;
 }
